@@ -1465,17 +1465,28 @@ body.touch .poptrox-popup .nav-next {
 @media screen and (max-width: 736px) {
 
 	.poptrox-popup:before {
-		display: none;
+		/*display: none;*/
 	}
 
 	.poptrox-popup .caption {
+		/*display: none !important;*/
+
+	}
+
+	.poptrox-popup .caption .hidden_text {
 		display: none !important;
+	}
+
+	.poptrox-popup .caption .hidden_spacing {
+		padding-top: 0px;
+		padding-bottom: 0px;
+		font-size: 12px;
 	}
 
 	.poptrox-popup .closer,
 	.poptrox-popup .nav-previous,
 	.poptrox-popup .nav-next {
-		display: none !important;
+		/*display: none !important;*/
 	}
 
 }
@@ -1516,7 +1527,7 @@ body.touch .poptrox-popup .nav-next {
 	right: 0;
 	top: 0;
 	transform: rotateZ(180deg);
-	
+
 }
 
 .slider::before {
@@ -1527,7 +1538,7 @@ body.touch .poptrox-popup .nav-next {
 .slider .slide-track {
 	animation: scroll 40s linear infinite;
 	display: flex;
-	
+
 	/*width: 801px;
     height: 260px;*/
 }
@@ -1536,12 +1547,12 @@ body.touch .poptrox-popup .nav-next {
 
 .slider_before {
 	width: 360%;
-    height: 360%;
+	height: 360%;
 }
 
-.modal-active  .slider_before {
+.modal-active .slider_before {
 	width: 200%;
-    height: 200%;
+	height: 200%;
 	margin-right: 0px !important;
 	position: 0 !important;
 }
@@ -1563,12 +1574,12 @@ body.touch .poptrox-popup .nav-next {
 
 .content_description {
 	padding-right: 2em !important;
-    padding-left: 2em !important;
+	padding-left: 2em !important;
 	/*background-color: #0000005e;*/
 	background-color: #0000009e;
 }
 
-.content_description p{
+.content_description p {
 	padding: 5px;
 }
 
