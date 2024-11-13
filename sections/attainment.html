@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../assets/boostrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <script rel="script" src="../assets/boostrap/jquery-3.2.1.slim.min.js"></script>
     <script rel="script" src="../assets/boostrap/popper.min.js"></script>
     <script rel="script" src="../assets/boostrap/bootstrap.min.js"></script>
@@ -15,24 +16,43 @@
             padding-top: 20px;
             text-align: center;
         }
+
+        button.btn.btn-link {
+            width: 100%;
+            color: #999da1;
+        }
+
+        .btn-link:hover,
+        .btn-link:focus {
+            text-decoration: none;
+        }
+
+        #accordion .fa-stack {
+            font-size: 10px;
+        }
+
     </style>
 </head>
 
 <body>
     <div class="title_pag">
-        <h1>Logros, reconocimientos, cerificados y titulo <img src="../images/fulls/logro.png" alt="" /></h1>
+        <h1>Logros, reconocimientos, certificados y título <img src="../images/fulls/logro.png" alt="" /></h1>
     </div>
     <div id="accordion">
         <div class="card">
             <div class="card-header" id="headingZero">
                 <h5 class="mb-0">
-                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseZero" aria-expanded="true"
+                    <button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseZero" aria-expanded="false"
                         aria-controls="collapseZero">
                         TÍTULO
+                        <span class="fa-stack fa-sm">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
+                        </span>
                     </button>
                 </h5>
             </div>
-            <div id="collapseZero" class="collapse show" aria-labelledby="headingZero" data-parent="#accordion">
+            <div id="collapseZero" class="collapse" aria-labelledby="headingZero" data-parent="#accordion">
                 <div class="card-body" style="height:500px">
                     <iframe src="../assets/pdf/titulo.pdf" frameborder="0" style="height:100%;width:100%;"></iframe>
                 </div>
@@ -41,9 +61,13 @@
         <div class="card">
             <div class="card-header" id="headingOne">
                 <h5 class="mb-0">
-                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne"
-                        aria-expanded="false" aria-controls="collapseOne">
+                    <button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
+                        aria-controls="collapseOne">
                         Curso INTRODUCCIÓN AL DESARROLLO WEB 2015
+                        <span class="fa-stack fa-sm">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
+                        </span>
                     </button>
                 </h5>
             </div>
@@ -57,9 +81,13 @@
         <div class="card">
             <div class="card-header" id="headingTwo">
                 <h5 class="mb-0">
-                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                    <button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
                         aria-controls="collapseTwo">
                         Constancia SIMPOSIUM DE SISTEMAS 2016 (SISI 2016)
+                        <span class="fa-stack fa-sm">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
+                        </span>
                     </button>
                 </h5>
             </div>
@@ -72,9 +100,13 @@
         <div class="card">
             <div class="card-header" id="headingThree">
                 <h5 class="mb-0">
-                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
-                        aria-expanded="false" aria-controls="collapseThree">
+                    <button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                        aria-controls="collapseThree">
                         Certificado ANDROID 2016
+                        <span class="fa-stack fa-sm">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
+                        </span>
                     </button>
                 </h5>
             </div>
@@ -87,9 +119,13 @@
         <div class="card">
             <div class="card-header" id="headingFour">
                 <h5 class="mb-0">
-                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"
-                        aria-expanded="false" aria-controls="collapseFour">
+                    <button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+                        aria-controls="collapseFour">
                         Certificado INGLES 2020
+                        <span class="fa-stack fa-sm">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
+                        </span>
                     </button>
                 </h5>
             </div>
@@ -102,9 +138,13 @@
         <div class="card">
             <div class="card-header" id="headingFive">
                 <h5 class="mb-0">
-                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive"
-                        aria-expanded="false" aria-controls="collapseFive">
+                    <button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false"
+                        aria-controls="collapseFive">
                         Certificado SCRUM 2021
+                        <span class="fa-stack fa-sm">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
+                        </span>
                     </button>
                 </h5>
             </div>
@@ -114,7 +154,210 @@
                 </div>
             </div>
         </div>
+        <div class="card">
+            <div class="card-header" id="headingSix">
+                <h5 class="mb-0">
+                    <button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false"
+                        aria-controls="collapseSix">
+                        Reconocimiento en la participación de la segunda edición de Cumbres de Comunidades (2021)
+                        <span class="fa-stack fa-sm">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                <div class="card-body" style="height:500px">
+                    <iframe src="../assets/pdf/Cumbres_Comunidades.pdf" frameborder="0" style="height:100%;width:100%;"></iframe>
+                    <iframe src="../assets/pdf/Cumbres_ComunidadesA.pdf" frameborder="0" style="height:100%;width:100%;"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingEight">
+                <h5 class="mb-0">
+                    <button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false"
+                        aria-controls="collapseEight">
+                        Certificado JavaScript (2023)
+                        <span class="fa-stack fa-sm">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordion">
+                <div class="card-body" style="height:500px">
+                    <iframe src="../assets/pdf/javascript.pdf" frameborder="0" style="height:100%;width:100%;"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingNine">
+                <h5 class="mb-0">
+                    <button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false"
+                        aria-controls="collapseNine">
+                        Certificado Ingles (2024)
+                        <span class="fa-stack fa-sm">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordion">
+                <div class="card-body" style="height:500px">
+                    <iframe src="../assets/pdf/ingles2024.pdf" frameborder="0" style="height:100%;width:100%;"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header" id="headingTen">
+                <h5 class="mb-0">
+                    <button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false"
+                        aria-controls="collapseTen">
+                        Certificado Desarrollo de apps con React Native (2024)
+                        <span class="fa-stack fa-sm">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordion">
+                <div class="card-body" style="height:900px">
+                    <p>
+                        Nota: Para este curso que lleve tome prestado la cuenta de un amigo, por eso el motivo que 
+                        sale a su nombre. Sin embargo, todo lo tomado en ese curso y las practicas para ser válido, esto 
+                        lo tengo en mi repositorio para hacerlo válido.
+                    </p>
+                    <p><strong>Repositorio</strong></p>
+                    <p>
+                        <ul>
+                            <li>
+                                <a href="https://github.com/Glendy-Covarrubias/react-navigation/tree/develop">Menus (Repaso practicas)</a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/Glendy-Covarrubias/Buscador/tree/develop">Buscador (Proyecto)</a>
+                            </li>
+                        </ul>
+                    </p>
+                    <img src="../images/fulls/ReactNative.png" width="95%"/>
+                    <br/>
+                    <a href="https://prnt.sc/kZpS5Qv77eBO">Captura del certificado cuando termine el curso</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingEleven">
+                <h5 class="mb-0">
+                    <button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseEleven" aria-expanded="false"
+                        aria-controls="collapseEleven">
+                        Curso Programando en Blazor - ASP.NET Core 7 (2024)
+                        <span class="fa-stack fa-sm">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseEleven" class="collapse" aria-labelledby="headingEleven" data-parent="#accordion">
+                <div class="card-body" style="height:500px">
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header" id="headingTwelve">
+                <h5 class="mb-0">
+                    <button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwelve" aria-expanded="false"
+                        aria-controls="collapseTwelve">
+                        Reconocimiento taller "Decidir sobre mi futuro" (2024)
+                        <span class="fa-stack fa-sm">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseTwelve" class="collapse" aria-labelledby="headingTwelve" data-parent="#accordion">
+                <div class="card-body" style="height:500px">
+                    <iframe src="../assets/pdf/DecidirSobreMiFuturo.pdf" frameborder="0" style="height:100%;width:100%;"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingThirteen">
+                <h5 class="mb-0">
+                    <button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThirteen" aria-expanded="false"
+                        aria-controls="collapseThirteen">
+                        Certificado de reconocimiento Capacitación en concientización sobre seguridad de KnowBe4 de 2024
+                        <span class="fa-stack fa-sm">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseThirteen" class="collapse" aria-labelledby="headingThirteen" data-parent="#accordion">
+                <div class="card-body" style="height:500px">
+                    <iframe src="../assets/pdf/CourseCompletionCertificate.pdf" frameborder="0" style="height:100%;width:100%;"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header" id="headingFourteen">
+                <h5 class="mb-0">
+                    <button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFourteen" aria-expanded="false"
+                        aria-controls="collapseFourteen">
+                        Certificado de reconocimiento Amenazas comunes 2024
+                        <span class="fa-stack fa-sm">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseFourteen" class="collapse" aria-labelledby="headingFourteen" data-parent="#accordion">
+                <div class="card-body" style="height:500px">
+                    <iframe src="../assets/pdf/CourseCompletionCertificate_1.pdf" frameborder="0" style="height:100%;width:100%;"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header" id="headingFifteen">
+                <h5 class="mb-0">
+                    <button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFifteen" aria-expanded="false"
+                        aria-controls="collapseFifteen">
+                        Certificado de reconocimiento Informe correos electrónicos sospechosos con el complemento de Gmail (2024)
+                        <span class="fa-stack fa-sm">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseFifteen" class="collapse" aria-labelledby="headingFifteen" data-parent="#accordion">
+                <div class="card-body" style="height:500px">
+                    <iframe src="../assets/pdf/CourseCompletionCertificate_2.pdf" frameborder="0" style="height:100%;width:100%;"></iframe>
+                </div>
+            </div>
+        </div>
     </div>
+    
+    <script>
+        $("#accordion").on("hide.bs.collapse show.bs.collapse", e => {
+            $(e.target)
+                .prev()
+                .find("i:last-child")
+                .toggleClass("fa-minus fa-plus");
+        });
+    </script>
 </body>
 
 </html>

@@ -1930,7 +1930,8 @@ body.is-preload #main .thumb {
 	-ms-transition-delay: 2.525s;
 	transition-delay: 2.525s;
 	height: calc(40vh - 2em);
-	min-height: 20em;
+	/*min-height: 20em;*/
+	min-height: 22.8em !important;
 	width: 25%;
 }
 
