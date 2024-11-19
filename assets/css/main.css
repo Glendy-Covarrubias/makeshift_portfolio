@@ -1584,8 +1584,6 @@ body.touch .poptrox-popup .nav-next {
 }
 
 
-
-
 /* Wrapper */
 
 #wrapper {
@@ -1808,6 +1806,30 @@ body.is-preload #header {
 		padding: 0 1.15em;
 	}
 
+	.content_description p {
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+
+	.content_description.resize_text_iam p {
+		padding-right: 35px;
+		padding-left: 35px;
+	}
+
+	.content_description.resize_text_project p {		
+		padding-left: 35px;
+		padding-right: 35px;
+	}
+
+	.content_description.resize_text_Volunteering p {		
+		padding-left: 40px;
+    	padding-right: 40px;
+	}
+
+	span.closer {
+		top: -15px !important;
+	}
+	
 }
 
 /* Main */
