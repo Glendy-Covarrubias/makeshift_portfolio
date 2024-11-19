@@ -31,6 +31,25 @@
             font-size: 10px;
         }
 
+        .align-items-center {
+            white-space: initial;
+        }
+
+        .hidden_text_only_response {
+            display: none;
+        }
+
+        @media screen and (max-width: 736px) {
+
+            .hidden_text {
+                display: none !important;
+            }
+
+            .hidden_text_only_response{
+                display: initial;
+            }
+
+        }
     </style>
 </head>
 
@@ -162,7 +181,8 @@
                         Reconocimiento en la participación de la segunda edición de Cumbres de Comunidades (2021)
                         <span class="fa-stack fa-sm">
                             <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
+                            <i class="fas fa-plus fa-stack-1x fa-inverse hidden_text"></i>
+                            <i class="fas fa-plus fa-stack-1x fa-inverse hidden_text_only_response" style="left: 4px;"></i>
                         </span>
                     </button>
                 </h5>
@@ -297,7 +317,8 @@
                         Certificado de reconocimiento Capacitación en concientización sobre seguridad de KnowBe4 de 2024
                         <span class="fa-stack fa-sm">
                             <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
+                            <i class="fas fa-plus fa-stack-1x fa-inverse hidden_text"></i>
+                            <i class="fas fa-plus fa-stack-1x fa-inverse hidden_text_only_response" style="left: 4px;"></i>
                         </span>
                     </button>
                 </h5>
@@ -337,7 +358,8 @@
                         Certificado de reconocimiento Informe correos electrónicos sospechosos con el complemento de Gmail (2024)
                         <span class="fa-stack fa-sm">
                             <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
+                            <i class="fas fa-plus fa-stack-1x fa-inverse hidden_text"></i>
+                            <i class="fas fa-plus fa-stack-1x fa-inverse hidden_text_only_response" style="left: 4px;"></i>
                         </span>
                     </button>
                 </h5>

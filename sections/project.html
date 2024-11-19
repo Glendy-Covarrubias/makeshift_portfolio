@@ -7,87 +7,150 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../assets/boostrap/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <script rel="script" src="../assets/boostrap/jquery-3.2.1.slim.min.js"></script>
     <script rel="script" src="../assets/boostrap/popper.min.js"></script>
     <script rel="script" src="../assets/boostrap/bootstrap.min.js"></script>
 </head>
+<style>
+    body{
+        color: white;
+        background: #1f2224;
+    }
+
+    .title-pag{
+        text-align: center;
+    }
+    
+    .card-body{
+        color: black;
+    }
+
+    
+    img.card-img-top.img-app {
+        width: 25%;
+    }
+
+    .content-img {
+        text-align: center;
+    }
+
+    @media screen and (max-width: 736px) {
+
+        .hidden_text {
+            display: none;
+        }
+
+        img.card-img-top.img-app {
+            width: 100%;
+        }
+
+    }
+</style>
 
 <body>
 
     <div class="container">
         <div class="row">
-            <div class="col-sm-6 mt-5">
+            <div class="col-12 mt-4">
+                <h1 class="title-pag">Desarrollos</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 mt-4">
                 <div class="card">
-                    <img class="card-img-top" src="../images/fulls/recidencia/login_usuario.png" alt="Card image cap">
+                    
                     <div class="card-body">
                         <h5 class="card-title">Referencia, contrareferencia y traslado</h5>
                         <p class="card-text">
                             Proyecto realizado para residencia profesional.
                             <br />
-                            Basada en HTML5, JQuery, CSS, PHP y Mysql.
+                            Basada en <strong>HTML5, JQuery, CSS, PHP y Mysql</strong>.
                             <br />
-                            Me dedique al Frontend y Backend de algunos módulos.
+                            Me dedique al <strong>Frontend</strong> y <strong>Backend</strong> de algunos módulos.
                         </p>
                         <p class="card-text">
                             Colaboré estrechamente con el <a href="https://www.linkedin.com/in/jesus-emmanuel-puga-martin-158249186/" target="_blank">Ingeniero Jesus Puga</a> en la creación de módulos dinámicos y funcionales, 
                             asegurando una experiencia de usuario fluida y un backend robusto.
+                            <br />
                             <br /> 
                             Este proyecto no solo nos permitió aplicar habilidades técnicas, sino también trabajar de manera efectiva 
                             en equipo, enfrentando desafíos complejos y aportando soluciones.
                         </p>
+                        <div id="accordion">
+                            <div class="card">
+                                <div class="card-header" id="headingZero">
+                                    <h5 class="mb-0">
+                                        <button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseZero" aria-expanded="false"
+                                            aria-controls="collapseZero">
+                                            <span class="fa-stack fa-sm">
+                                                <i class="fas fa-circle fa-stack-2x"></i>
+                                                <i class="fas fa-chevron-down fa-stack-1x fa-inverse"></i>
+                                            </span>
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseZero" class="collapse" aria-labelledby="headingZero" data-parent="#accordion">
+                                    <div class="card-body content-img">
+                                        <img class="card-img-top" src="../images/fulls/recidencia/login_usuario.png" alt="Card image cap">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="card-footer">
                         <small class="text-muted">ISSSTE</small>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 mt-5">
+
+
+            <div class="col-sm-6 mt-4">
                 <div class="card">
-                    <img class="card-img-top" src="../images/fulls/proyectos/lakeway.png" alt="Card image cap" height="303px">
-                    <div class="card-body" style="height: 306px;">
+                    <div class="card-body">
                         <h5 class="card-title">Lakeway</h5>
                         <p class="card-text">
                             Sistema de que permite llevar el inventario de los productos enviados a
                             diferentes expendios.
                             <br />
-                            Basada en .net y otras tecnologías.
+                            Basada en <strong>.net</strong> y otras tecnologías.
                         </p>
                         <p class="card-text">
-                            Colaboré en el desarrollo integral de aplicaciones, contribuyendo tanto al Frontend como al Backend, 
+                            Colaboré en el desarrollo integral de la aplicación, 
+                            contribuyendo tanto al <strong>Frontend</strong> como al <strong>Backend</strong>, 
                             trabajando con el equipo para crear soluciones eficientes y escalables.
                         </p>
+                        <div id="accordion">
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h5 class="mb-0">
+                                        <button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
+                                            aria-controls="collapseOne">
+                                            <span class="fa-stack fa-sm">
+                                                <i class="fas fa-circle fa-stack-2x"></i>
+                                                <i class="fas fa-chevron-down fa-stack-1x fa-inverse"></i>
+                                            </span>
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                                    <div class="card-body content-img">
+                                        <img class="card-img-top" src="../images/fulls/proyectos/lakeway.png" alt="Card image cap" >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="card-footer">
                         <small class="text-muted">ENSITECH</small>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 mt-5">
+            
+
+
+            <div class="col-sm-6 mt-4">
                 <div class="card">
-                    <img class="card-img-top" src="../images/fulls/proyectos/banregio.png" alt="Card image cap" height="276px">
-                    <div class="card-body" style="height: 287px;">
-                        <h5 class="card-title">Seguro de Autos Banregio</h5>
-                        <p class="card-text">
-                            Sistema para cotizar un seguro de Autos.
-                            <br />
-                            Basada en Angular, Java y otras tecnologías.
-                            <br />
-                            Mi enfoque estuvo en el desarrollo del Frontend.
-                        </p>
-                        <p class="card-text">
-                            Esta colaboración me permitió aplicar mis habilidades técnicas en un proyecto de alto impacto, 
-                            contribuyendo al mejoramiento de los servicios digitales de Banregio. Trabajando en estrecha 
-                            colaboración con el equipo de la empresa.
-                        </p>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted">ENSITECH</small>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 mt-5">
-                <div class="card">
-                    <img class="card-img-top" src="../images/fulls/proyectos/potencialventas.png" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Potencial de Ventas</h5>
                         <p class="card-text">
@@ -95,11 +158,11 @@
                             ofreciendo a los usuarios información clave para potenciar sus resultados comerciales. 
                             <a href="https://youtu.be/vVpArb7zKQI" target="_blank">video aquí</a>
                             <br />
-                            Basada en HTML5, JQuery, CSS, PHP, Mysql, Symfony y otras tecnologías.
+                            Basada en <strong>HTML5, JQuery, CSS, PHP, Mysql, Symfony</strong> y otras tecnologías.
                             <br />
                         </p>
                         <p class="card-text">
-                            Colaboré en el desarrollo completo del sistema, tanto en Frontend como Backend, 
+                            Colaboré en el desarrollo completo del sistema, tanto en <strong>Frontend</strong> como <strong>Backend</strong>, 
                             trabajando en estrecha coordinación con mi líder de proyecto, quien dirigió la planificación 
                             y ejecución global del sistema.
                         </p>
@@ -109,43 +172,67 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-12 mt-5">
+
+
+            <div class="col-sm-6 mt-4">
+                <div class="card">
+                    <div class="card-body" style="height: 285px;">
+                        <h5 class="card-title">Seguro de Autos</h5>
+                        <p class="card-text">
+                            Sistema para cotizar seguros de Autos.
+                            <br />
+                            Basada en <strong>Angular, Java</strong> y otras tecnologías.
+                            <br />
+                            Mi enfoque estuvo en el desarrollo del <strong>Frontend</strong>.
+                        </p>
+                        <p class="card-text">
+                            Esta colaboración me permitió aplicar mis habilidades técnicas en un proyecto de alto impacto, 
+                            contribuyendo al mejoramiento de los servicios digitales de Banregio. 
+                            <span class="hidden_text">
+                                Trabajando en estrecha 
+                                colaboración con el equipo de la empresa externa.
+                            </span>
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">ENSITECH</small>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="col-sm-12 mt-4">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">Maxi</h5>
                         <p class="card-text">
                             Es un sistema de gestión para autorizar, aprobar la apertura y verificación
-                            del negocio, agencia, usuario y otros procesos clave...
+                            del negocio, agencia, usuario y otros procesos claves...
                             <br />
-                            Basada en <strong>React</strong>, Phyton y otras tecnologías.
+                            Basada en <strong>React, Phyton</strong> y otras tecnologías.
                             <br />
-                            Me enfoqué en el desarrollo Frontend.
+                            Me enfoqué en el desarrollo <strong>Frontend</strong>.
                         </p>
                         <p class="card-text">
                             Esta colaboración me permitió contribuir significativamente a la mejora de los flujos de trabajo y 
                             la automatización de procesos críticos. Implementando funcionalidades y mejorando la experiencia de usuario.
                         </p>
-                        <nav>
-                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                <a class="nav-item nav-link active" id="nav-home-4-tab" data-toggle="tab"
-                                    href="#nav-home-4" role="tab" aria-controls="nav-home-4" aria-selected="true">
-                                    Tabla validaciones
-                                </a>
-                                <a class="nav-item nav-link" id="nav-profile-4-tab" data-toggle="tab"
-                                    href="#nav-profile-4" role="tab" aria-controls="nav-profile-4"
-                                    aria-selected="false">
-                                    Módulo de carga de documentos
-                                </a>                                
-                            </div>
-                        </nav>
-                        <div class="tab-content" id="nav-tabContent" style="padding-top: 50px;">
-                            <div class="tab-pane fade show active" id="nav-home-4" role="tabpanel"
-                                aria-labelledby="nav-home-4-tab">
-                                <img class="card-img-top" src="../images/fulls/proyectos/maxi.png" />
-                            </div>
-                            <div class="tab-pane fade" id="nav-profile-4" role="tabpanel"
-                                aria-labelledby="nav-profile-4-tab">
-                                <img class="card-img-top" src="../images/fulls/proyectos/maxi2.png" />
+                        <div id="accordion">
+                            <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                    <h5 class="mb-0">
+                                        <button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                            aria-controls="collapseTwo">
+                                            <span class="fa-stack fa-sm">
+                                                <i class="fas fa-circle fa-stack-2x"></i>
+                                                <i class="fas fa-chevron-down fa-stack-1x fa-inverse"></i>
+                                            </span>
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                    <div class="card-body content-img">
+                                        <img class="card-img-top" src="../images/fulls/proyectos/maxi2.png" alt="Card image cap" style="width: 30%;">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -154,47 +241,45 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-12 mt-5">
+            <div class="col-sm-12 mt-4">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Customer Pulse</h5>
                         <p class="card-text">
                             Es un sistema en su versión 2 para armar, configurar preguntas y el valor de ellas.
                             <br />
-                            Basada en PHP, usando el Framework Laravel. En base de datos se usó PostgreSQL y MongoDB.
+                            Basada en <strong>PHP</strong>, usando el <strong>Framework Laravel</strong>. En base de datos se usó <strong>PostgreSQL y MongoDB</strong>.
                             <br />
-                            Colaboré junto con el equipo de desarrollo tanto del Frontend como del Backend, 
+                            Colaboré junto con el equipo de desarrollo tanto del <strong>Frontend</strong> como del <strong>Backend</strong>, 
                             asegurando una integración fluida y una experiencia de usuario eficiente.
                             <br />
                             Para este proyecto me toco trabajar como outsourcing junto en colaboración 
-                            con el equipo de desarrollo de la empresa Walook.
+                            con el equipo de desarrollo de la empresa <strong>Walook</strong>.
                         <nav>
                             <div class="nav nav-tabs" id="nav-tab" role="tablist">
                                 <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home"
                                     role="tab" aria-controls="nav-home" aria-selected="true">Configuración de
                                     pregunta</a>
-                                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile"
-                                    role="tab" aria-controls="nav-profile" aria-selected="false">Preguntas
-                                    configuradas</a>
-                                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact"
-                                    role="tab" aria-controls="nav-contact" aria-selected="false">Match</a>
                             </div>
                         </nav>
-                        <div class="tab-content" id="nav-tabContent" style="padding-top: 50px;">
-                            <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
-                                aria-labelledby="nav-home-tab">
-                                <img class="card-img-top" src="../images/fulls/configuracion_pregunta.png" />
-                            </div>
-                            <div class="tab-pane fade" id="nav-profile" role="tabpanel"
-                                aria-labelledby="nav-profile-tab">
-                                <img class="card-img-top" src="../images/fulls/preguntas_configuradas.png" />
-                                <img class="card-img-top" src="../images/fulls/preguntas_configuradas_2.png" />
-
-                            </div>
-                            <div class="tab-pane fade" id="nav-contact" role="tabpanel"
-                                aria-labelledby="nav-contact-tab">
-                                <img class="card-img-top" src="../images/fulls/match_1.png" />
-                                <img class="card-img-top" src="../images/fulls/match_3.png" />
+                        <div id="accordion">
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <h5 class="mb-0">
+                                        <button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                            aria-controls="collapseThree">
+                                            <span class="fa-stack fa-sm">
+                                                <i class="fas fa-circle fa-stack-2x"></i>
+                                                <i class="fas fa-chevron-down fa-stack-1x fa-inverse"></i>
+                                            </span>
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                    <div class="card-body content-img">
+                                        <img class="card-img-top" src="../images/fulls/proyectos/configuracion_pregunta.png" style="width: 50%;" />
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         </p>
@@ -204,79 +289,100 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-12 mt-5">
+            <div class="col-sm-12 mt-4">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">Cotizador Finbe</h5>
+                        <h5 class="card-title">Cotizador</h5>
                         <p class="card-text">
                             Es un sistema de cotización de autos.
                             <br />
-                            Basada en Node y Angular.
+                            Basada en <strong>Node</strong> y <strong>Angular</strong>.
                             <br />
-                            Mi enfoque fue en el soporte de Frontend como Backend.
+                            Mi enfoque fue en el soporte de <strong>Frontend</strong> como <strong>Backend</strong>.
                             <br />
                             Colaboré en el soporte del desarrollo de esta aplicación para mejoras continuas.
-                        <nav>
-                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                <a class="nav-item nav-link active" id="nav-home-1-tab" data-toggle="tab"
-                                    href="#nav-home-1" role="tab" aria-controls="nav-home-1" aria-selected="true">
-                                    Envío de calificación
-                                </a>
-                                <a class="nav-item nav-link" id="nav-profile-1-tab" data-toggle="tab"
-                                    href="#nav-profile-1" role="tab" aria-controls="nav-profile-1"
-                                    aria-selected="false">Resultado de búsqueda</a>
-                            </div>
-                        </nav>
-                        <div class="tab-content" id="nav-tabContent" style="padding-top: 50px;">
-                            <div class="tab-pane fade show active" id="nav-home-1" role="tabpanel"
-                                aria-labelledby="nav-home-1-tab">
-                                <img class="card-img-top" src="../images/fulls/proyectos/finbe_calificacion.png" />
-                            </div>
-                            <div class="tab-pane fade" id="nav-profile-1" role="tabpanel"
-                                aria-labelledby="nav-profile-1-tab">
-                                <img class="card-img-top" src="../images/fulls/proyectos/finbe_not_found.png" />
+                        
+                        </p>
+                        <div id="accordion">
+                            <div class="card">
+                                <div class="card-header" id="headingFour">
+                                    <h5 class="mb-0">
+                                        <button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+                                            aria-controls="collapseFour">
+                                            <span class="fa-stack fa-sm">
+                                                <i class="fas fa-circle fa-stack-2x"></i>
+                                                <i class="fas fa-chevron-down fa-stack-1x fa-inverse"></i>
+                                            </span>
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                                    <div class="card-body content-img">
+                                        <img class="card-img-top" src="../images/fulls/proyectos/finbe_calificacion.png" style="width: 50%;"/>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        </p>
                     </div>
                     <div class="card-footer">
                         <small class="text-muted">ENSITECH</small>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-12 mt-5">
+            <div class="col-sm-12 mt-4">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">Bepensa refrigeración</h5>
+                        <h5 class="card-title"></h5>
                         <p class="card-text">
                             Es un sistema de gestión de productos.
                             <br />
-                            Colaboré junto con el equipo en el desarrollo de Frontend, 
-                            en la integración de los servicios API, como la construcción de funcionalidades, flujos y maquetados.
-                        <nav>
-                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                <a class="nav-item nav-link active" id="nav-home-2-tab" data-toggle="tab"
-                                    href="#nav-home-2" role="tab" aria-controls="nav-home-2" aria-selected="true">
-                                    Alta y configuración
-                                </a>
-                                <a class="nav-item nav-link" id="nav-profile-2-tab" data-toggle="tab"
-                                    href="#nav-profile-2" role="tab" aria-controls="nav-profile-2"
-                                    aria-selected="false">Tabla de registros</a>
-                                <a class="nav-item nav-link" id="nav-otro-2-tab" data-toggle="tab" href="#nav-otro-2"
-                                    role="tab" aria-controls="nav-otro-2" aria-selected="false">Mensaje</a>
-                            </div>
-                        </nav>
-                        <div class="tab-content" id="nav-tabContent" style="padding-top: 50px;">
-                            <div class="tab-pane fade show active" id="nav-home-2" role="tabpanel"
-                                aria-labelledby="nav-home-2-tab">
-                                <img class="card-img-top" src="../images/fulls/proyectos/bepensa.png" />
-                            </div>
-                            <div class="tab-pane fade" id="nav-profile-2" role="tabpanel"
-                                aria-labelledby="nav-profile-2-tab">
-                                <img class="card-img-top" src="../images/fulls/proyectos/bepensabebida.png" />
-                            </div>
-                            <div class="tab-pane fade" id="nav-otro-2" role="tabpanel" aria-labelledby="nav-otro-2-tab">
-                                <img class="card-img-top" src="../images/fulls/proyectos/bepensabebeida2.png" />
+                            Colaboré junto con el equipo en el desarrollo de <strong>Frontend</strong>, 
+                            en la <strong>integración de los servicios API</strong>, como la construcción de funcionalidades, flujos y maquetados.
+                       
+                        <div id="accordion">
+                            <div class="card">
+                                <div class="card-header" id="headingFive">
+                                    <h5 class="mb-0">
+                                        <button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false"
+                                            aria-controls="collapseFive">
+                                            <span class="fa-stack fa-sm">
+                                                <i class="fas fa-circle fa-stack-2x"></i>
+                                                <i class="fas fa-chevron-down fa-stack-1x fa-inverse"></i>
+                                            </span>
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                                    <div class="card-body content-img">
+                                        
+                                        <nav>
+                                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                                <a class="nav-item nav-link active" id="nav-home-2-tab" data-toggle="tab"
+                                                    href="#nav-home-2" role="tab" aria-controls="nav-home-2" aria-selected="true">
+                                                    Alta y configuración
+                                                </a>
+                                                <a class="nav-item nav-link" id="nav-profile-2-tab" data-toggle="tab"
+                                                    href="#nav-profile-2" role="tab" aria-controls="nav-profile-2"
+                                                    aria-selected="false">Tabla de registros</a>
+                                                <a class="nav-item nav-link" id="nav-otro-2-tab" data-toggle="tab" href="#nav-otro-2"
+                                                    role="tab" aria-controls="nav-otro-2" aria-selected="false">Mensaje</a>
+                                            </div>
+                                        </nav>
+                                        <div class="tab-content" id="nav-tabContent" style="padding-top: 50px;">
+                                            <div class="tab-pane fade show active content-img" id="nav-home-2" role="tabpanel"
+                                                aria-labelledby="nav-home-2-tab">
+                                                <img class="card-img-top" src="../images/fulls/proyectos/bepensa.png" style="width: 80%;"/>
+                                            </div>
+                                            <div class="tab-pane fade content-img" id="nav-profile-2" role="tabpanel"
+                                                aria-labelledby="nav-profile-2-tab">
+                                                <img class="card-img-top" src="../images/fulls/proyectos/bepensabebida.png" style="width: 80%;"/>
+                                            </div>
+                                            <div class="tab-pane fade content-img" id="nav-otro-2" role="tabpanel" aria-labelledby="nav-otro-2-tab">
+                                                <img class="card-img-top" src="../images/fulls/proyectos/bepensabebeida2.png" style="width: 40%;" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         </p>
@@ -327,19 +433,18 @@
             </div>-->
 
 
-            <div class="col-sm-6 mt-5 mb-5">
+            <div class="col-sm-6 mt-4 mb-4">
                 <div class="card">
-                    <img class="card-img-top" src="../images/fulls/proyectos/oma.png" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Sistema de Aerolínea</h5>
                         <p class="card-text">
                             Es un sistema que permite revisar y reservar estancias para cuando sales de viaje.
                             Como son salones y estacionamientos.
                             <br />
-                            El proyecto fue realizado con Vue.js y .NET
+                            El proyecto fue realizado con <strong>Vue.js</strong> y <strong>.NET</strong>
                         </p>
                         <p class="card-text">
-                            Mi rol principal fue colaborar en la mejora continua del Frontend, implementando cambios y optimizaciones 
+                            Mi rol principal fue colaborar en la mejora continua del <strong>Frontend</strong>, implementando cambios y optimizaciones 
                             para mejorar la experiencia del usuario. Además, apoyé en tareas del Backend, como la incorporación 
                             de nuevos datos y la actualización de reportes, asegurando que el sistema se mantuviera actualizado y eficiente.
                         </p>
@@ -351,16 +456,15 @@
             </div>
 
 
-            <div class="col-sm-6 mt-5 mb-5">
+            <div class="col-sm-6 mt-4 mb-4">
                 <div class="card">
-                    <img class="card-img-top" src="../images/fulls/proyectos/ptv.png" alt="Card image cap">
-                    <div class="card-body">
+                    <div class="card-body" style="height: 284px;">
                         <h5 class="card-title">Sistema multas</h5>
                         <p class="card-text">
-                            El proyecto fue realizado con .Net
+                            El proyecto fue realizado con <strong>.Net</strong>
                         </p>
                         <p class="card-text">
-                            Colaboré junto con el equipo al desarrollo de algunos módulos del sistema tanto de lado del Frontend como Backend.
+                            Colaboré junto con el equipo al desarrollo de algunos módulos del sistema tanto de lado del <strong>Frontend</strong> como <strong>Backend</strong>.
                         </p>
                         <p>
                             En mi experiencia este fue el proyecto más desafiante.
@@ -371,8 +475,60 @@
                     </div>
                 </div>
             </div>
+
+            <div class="col-12 mt-3 mb-3">
+                <h3 class="title-pag">Sección proyectos personales</h3>
+            </div>
+
+            <div class="col-sm-12 mt-4 mb-5">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Buscador</h5>
+                        <p class="card-text">
+                            Es una aplicación en <strong>React Native</strong> integrado con un servicio API externo para
+                            la busqueda de peliculas, series de Anime.
+                            <br />
+                            Esta aplicación fue producto de una practica de una capacitación. 
+                            Fue el proyecto final.
+                        </p>
+                        <p><a href="https://github.com/Glendy-Covarrubias/Buscador/tree/develop">Repositorio</a></p>
+                        <div id="accordion">
+                            <div class="card">
+                                <div class="card-header" id="headingSix">
+                                    <h5 class="mb-0">
+                                        <button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false"
+                                            aria-controls="collapseSix">
+                                            <span class="fa-stack fa-sm">
+                                                <i class="fas fa-circle fa-stack-2x"></i>
+                                                <i class="fas fa-chevron-down fa-stack-1x fa-inverse"></i>
+                                            </span>
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                                    <div class="card-body content-img">
+                                        <img class="card-img-top img-app" src="../images/fulls/proyectos/buscador.png"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Personal</small>
+                    </div>
+                </div>
+            </div>
+            
         </div>
     </div>
+    <script>
+        $("#accordion").on("hide.bs.collapse show.bs.collapse", e => {
+            $(e.target)
+                .prev()
+                .find("i:last-child")
+                .toggleClass("fa-chevron-up fa-chevron-down");
+        });
+    </script>
 </body>
 
 </html>
